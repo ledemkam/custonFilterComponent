@@ -16,7 +16,7 @@ export default function FilterProductList({
 
   useEffect(() => {
     onChange({ search: debouncedSearch, category, maxPrice });
-  }, [debouncedSearch]);
+  }, [debouncedSearch, category, maxPrice]);
 
 
   return (
